@@ -7,5 +7,6 @@ export class User{
     username = '';
     email = '';
     role = [];
-    groups = Group;
+    groups = [];
+    password = ''
 }

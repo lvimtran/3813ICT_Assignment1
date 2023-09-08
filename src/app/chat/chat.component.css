@@ -1,0 +1,25 @@
+h2{
+    font-weight: 700;
+    color: rgb(8, 73, 153);
+    margin: 30px 70px 20px;
+}
+
+.chat-input{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    height: 35px;
+    width: 70%;
+    margin-left: 50px;
+}
+
+button{
+    background-color: rgb(8, 73, 153, 0.8);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 5px 15px 5px;
+    margin-left: 10px;
+}

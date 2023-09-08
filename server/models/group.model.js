@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const groupSchema = new Schema({
     //Create new group in the database, user must provide
     //a non-empty string
-    name: {
+    user: {
         type: String,
         require: true
     },

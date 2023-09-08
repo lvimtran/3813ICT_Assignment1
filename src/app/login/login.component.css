@@ -1,0 +1,39 @@
+form{
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid black
+}
+
+h2{
+    text-align: center;
+    color: rgb(8, 73, 153);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+label{
+    padding-left: 55px;
+    margin: 10px;
+}
+
+input{
+    width: 60%;
+}
+
+#email{
+    margin-left: 35px;
+}
+
+#password{
+    margin-left: 10px;
+}
+
+button{
+    background-color: rgb(8, 73, 153);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 5px 15px 5px;
+    margin-left: 205px;
+    margin-top: 20px;
+}

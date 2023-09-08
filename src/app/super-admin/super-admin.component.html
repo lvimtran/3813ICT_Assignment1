@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Super Admin Section</h2>
+    <hr />
+  
+    <!-- Promote User to Group Admin -->
+    <div>
+      <h4>Promote User to Group Admin</h4>
+      <div class="form-group">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" [(ngModel)]="userIdToPromote" class="form-control" />
+      </div>
+      <button class="btn btn-primary" (click)="promoteUser(userIdToPromote)">Promote to Group Admin</button>
+
+    </div>
+  
+    <hr />
+  
+    <!-- Remove User -->
+    <div>
+      <h4>Remove User</h4>
+      <div class="form-group">
+        <label for="userIdToRemove">User ID:</label>
+        <input type="text" id="userIdToRemove" [(ngModel)]="userIdToRemove" class="form-control" />
+      </div>
+      <button class="btn btn-danger" (click)="removeUser(userIdToRemove)">Remove User</button>
+    </div>
+  
+    <hr />
+  
+    <!-- Upgrade User to Super Admin -->
+    <div>
+      <h4>Upgrade User to Super Admin</h4>
+      <div class="form-group">
+        <label for="userIdToUpgrade">User ID:</label>
+        <input type="text" id="userIdToUpgrade" [(ngModel)]="userIdToUpgrade" class="form-control" />
+      </div>
+      <button class="btn btn-success" (click)="upgradeToSuperAdmin(userIdToUpgrade)">Upgrade to Super Admin</button>
+    </div>
+  </div>
+</body>
+</html>

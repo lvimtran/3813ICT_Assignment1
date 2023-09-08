@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./user-registration.component.css">
+</head>
+<body>  
+    <form (ngSubmit)="registerUser()">
+        <h2>User Registration</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="user.username" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" [(ngModel)]="user.email">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.password">
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

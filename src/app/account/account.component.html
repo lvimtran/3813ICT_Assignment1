@@ -1,1 +1,21 @@
-<p>account works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="./account.component.css">
+</head>
+<body>
+    <div *ngIf="user" class="user">
+        <h3>Welcome, {{user.username}}</h3>
+    </div>
+    <div *ngIf="!user">
+        <p>User not found</p>
+    </div>
+    <div class="actions">
+        <button id="logout" (click)="logout()">Logout</button>
+        <button id="delete" (click)="deleteAccount()">Delete Account</button>
+    </div>
+</body>
+</html>

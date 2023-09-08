@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Chat User</h2>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" [(ngModel)]="username" class="form-control" />
+        </div>
+        <button class="btn btn-primary" (click)="createUser()">Create User</button>
+    </div>
+      
+    <div class="container mt-4">
+        <h2>Manage Groups and Channels</h2>
+        <div class="form-group">
+          <label for="groupId">Select Group:</label>
+          <select id="groupId" [(ngModel)]="selectedGroupId" class="form-control">
+            <option *ngFor="let group of groups" [value]="group.id">{{ group.name }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="channelId">Select Channel:</label>
+          <select id="channelId" [(ngModel)]="selectedChannelId" class="form-control">
+            <option *ngFor="let channel of channels" [value]="channel.id">{{ channel.name }}</option>
+          </select>
+        </div>
+
+        <button class="btn btn-primary" (click)="joinChannel('yourGroupId', 'yourChannelId')">Join Channel</button>
+        <button class="btn btn-success" (click)="registerInterest('yourUserId', 'yourGroupId')">Register Interest</button>
+    </div> 
+</body>
+</html>

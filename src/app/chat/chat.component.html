@@ -1,1 +1,36 @@
-<p>chat works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <link rel="stylesheet" href="./chat.component.css">
+</head>
+<body action="/userRegistration">
+    <h2>Chat</h2>
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <ul>
+                <li *ngFor="let group of groups">
+                    <h3>{{group.name}}</h3>
+                    <ul>
+                        <li *ngFor="let channel of group.channels">
+                            <a (click)="selectChannel(channel)">{{channel.name}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-messages">
+            <div *ngFor="let message of messages">
+                <p>{{message.user.username}}</p>
+                <p>{{message.content}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat-input">
+        <textarea [(ngModel)]="newMessage" (keydown.enter)="sendMessage()"></textarea>
+        <button (click)="sendMessage()">Send</button>
+    </div>
+</body>
+</html>

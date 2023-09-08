@@ -1,0 +1,29 @@
+#registration:hover{
+    color: rgb(15, 121, 243);
+    background-color: #fff;
+}
+#registration::after{
+    color: rgb(192, 225, 236);
+}
+
+#login:hover{
+    color: rgb(15, 121, 243);
+    background-color: #fff;
+}
+
+#account:hover{
+    color: rgb(15, 121, 243);
+    background-color: #fff;
+}
+
+#group:hover{
+    color: rgb(15, 121, 243);
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+
+#chat:hover{
+    color: rgb(15, 121, 243);
+    background-color: #fff;
+}
